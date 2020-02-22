@@ -1,3 +1,4 @@
+# 좀 어렵 다시한번 들어야겠
 import os
 
 operator = ["+", "-", "*", "/", "="]
@@ -29,7 +30,7 @@ def string_calculator(user_input, show_history = False):
 
             if show_history:
                 print(string_list)
-                
+
         pos += 1
         print(string_list)
     if len(string_list) > 0:
