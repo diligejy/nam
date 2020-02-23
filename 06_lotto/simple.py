@@ -1,15 +1,18 @@
 import random
 
-lotto = []
+count = int(input("로또 번호를 몇개 생성할까요? \n"))
 
-rand_num = random.randint(1, 46)
+for j in range(count):
+    lotto = []
 
-for i in range(6):
-    # 중복방지
-    while rand_num in lotto:
-        rand_num = random.randint(1, 46)
-    lotto.append(rand_num)
+    rand_num = random.randint(1, 46)
 
-lotto.sort()
+    for i in range(6):
+        # 중복방지
+        while rand_num in lotto:
+            rand_num = random.randint(1, 46)
+        lotto.append(rand_num)
 
-print('로또번호 : {}'.format(lotto))
+    lotto.sort()
+
+    print('{} 로또번호 : {}'.format(j, lotto))
